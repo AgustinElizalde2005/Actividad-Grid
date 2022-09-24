@@ -1,0 +1,136 @@
+/* Tarea
+
+    Menu selectivo
+    Colores acorde
+    Incluir 5 imagenes utilizando Grid
+    La pagina se debera entregar via GitHub
+    Solo el index,css,imagenes
+    pablogareistecnica@gmail.com*/
+
+.grid_cont {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 360px;
+    padding: 15px;
+    grid-gap: 30px;
+}
+
+.linea {
+    border-top: 2px solid black;
+}
+
+h1 {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+.imagen {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.text {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-size: 15px;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
+    width: 99%;
+    margin: 0;
+    padding: 5px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-family: "sans-serif,monospace";
+}
+
+.cont {
+    position: relative;
+}
+
+.cont:nth-child(1) {
+    grid-row-start: span 2;
+}
+
+.cont:nth-child(3) {
+    grid-row-start: span 2;
+}
+
+.cont:nth-child(5) {
+    grid-column-start: span 3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+footer {
+    border-bottom: 15px;
+}
+
+header {
+    background-color: rgb(215, 62, 93);
+    margin-top: 10px;
+    padding: 5px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 2px solid black;
+}
+
+.titulo {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    color: white;
+
+}
+
+header nav {
+    display: flex;
+    justify-content: right;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+header nav a:hover {
+    color: rgb(246, 138, 145);
+}
+
+.principal_main {
+    background-color: rgb(204, 152, 162);
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.poke1 img {
+    width: 40%;
+    height: 40%;
+    margin-left: 25%;
+}
+
+@media(min-width:650px) {
+    header {
+        position: relative;
+        width: 100%;
+    }
+
+}
